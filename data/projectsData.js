@@ -7,7 +7,7 @@ export const ProjectsData = [
   },
   {
     name: "DevFolio",
-    bio: "Responsive personal blog site and portfolio made with nextjs and tailwindcss",
+    bio: "My personal website and blog built with JavaScript, Next.js, and Tailwind CSS",
     image: "/images/projects/devfolio.png",
     link: "",
   },
