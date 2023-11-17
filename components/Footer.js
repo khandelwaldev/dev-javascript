@@ -19,9 +19,9 @@ export const grid2 = [
 export default function Footer() {
   return (
     <div>
-      {/* <div className="mb-10">
+      <div className="mb-10">
         <NowPlaying />
-      </div> */}
+      </div>
       <div className="flex flex-col-reverse gap-8 sm:flex-row sm:justify-between">
         <div className="max-w-[400px]">
           <h1 className="text-lg font-semibold">About Me</h1>
