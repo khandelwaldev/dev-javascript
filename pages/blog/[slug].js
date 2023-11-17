@@ -11,6 +11,7 @@ import DateFormatter from "components/DateFormatter";
 import Image from "next/image";
 import Claps from "@upstash/claps";
 import rehypeHighlight from "rehype-highlight";
+import { Comments } from "@/components/Comments";
 
 const BlogPost = ({ mdxSource, frontMatter }) => {
   const router = useRouter();
@@ -77,8 +78,10 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
       <div className="prose dark:prose-invert">
         <MDXRemote {...mdxSource} />
       </div>
-
-      <div id="comments"></div>
+      <hr className="my-10 border border-white opacity-70" />
+      <div id="comments">
+        <Comments />
+      </div>
     </>
   );
 };
