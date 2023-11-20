@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://slyro.vercel.app/</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/about</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/blog</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/guestbook</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/contact</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/blog/python-automation-with-selenium</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/blog/why-choose-tailwind-css</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/uses</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags/Selenium</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags/python</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags/instagram</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags/tailwindcss</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags/css</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://slyro.vercel.app/tags/[tag]</loc>
+  <lastmod>2023-11-20T07:08:28+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
