@@ -11,7 +11,7 @@ const BlogCard = ({ href, date, title, description, views, readTime }) => {
         <span>
           <DateFormatter dateString={date} />
         </span>
-        ·<span>{readTime} min read</span>·<span>{views} views</span>
+{/*·<span>{readTime} min read</span>·<span>{views} views</span>*/}
       </div>
 
       <div className="">
