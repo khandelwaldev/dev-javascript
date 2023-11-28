@@ -1,64 +1,139 @@
 import { TerminalLogo } from "components/Icons";
 import { NextSeo } from "next-seo";
 
-export const items = [
+export const itemsPC = [
   {
-    name: "Laptop",
-    bio: "Apple MacBook Pro (15-Inch, 16GB RAM, 512GB Storage, 2.6GHz Intel Core i7)",
+    name: "27' 165hz Monitor",
+    bio: "LG 27GR75Q-B",
   },
   {
-    name: "Adaptor",
-    bio: "Hyper HyperDrive USB C Hub, Duo 7-in-2 USB C Adapter - MacBook Pro Adapter with Magnetic Grip, 4K HDMI, USB-C 40Gbps 100W PD, 3.1 USB-A, MicroSD/SD - Space Gray",
+    name: "Mouse",
+    bio: "Logitech G402",
   },
   {
-    name: "Keyboard & Mouse",
-    bio: "Circle ROVER A7 Wireless Combo Keyboard & Mouse Set Deskset / Unique Slim Design / Spill Resistance / UV Prined Keycaps / 12 Multimedia Hotkeys, Fn+(F1 to F12) / Easy to Clean - White",
+    name: "Keyboard",
+    bio: "Logitech G512",
+  },
   },
   {
-    name: "IDE",
+    name: "CPU",
+    bio: "i5 10400F",
+  },
+  },
+  {
+    name: "Motherboard",
+    bio: "Gigabyte B460M",
+  },
+  },
+  {
+    name: "Graphics card",
+    bio: "GeForce GTX 1660 SUPER",
+  },
+  },
+  {
+    name: "500gb SSD",
+    bio: "WD Blue M.2 SN550",
+  },
+  },
+  {
+    name: "Storage",
+    bio: "WD 1TB 7200RPM",
+  },
+  },
+  {
+    name: "Cooler",
+    bio: "Cooler Master H410R",
+  },
+  },
+  {
+    name: "Power Supply, 80+ Bronze",
+    bio: "FSP 700W",
+  },
+  },
+  {
+    name: "Ram",
+    bio: "Corsair VENGEANCE® LPX 32GB",
+  },
+  },
+  {
+    name: "PC Cabinet",
+    bio: "Cooler Master MasterBox MB520 Mesh",
+  },
+]
+
+export const coding = [
+  {
+    name: "Editor",
     bio: "Visual Studio Code",
   },
   {
-    name: "API Tester",
-    bio: "Postman",
+    name: "IDE",
+    bio: "Visual Studio",
   },
   {
-    name: "Browser",
-    bio: "Google Chrome",
+    name: "VS Code theme",
+    bio: "Github Theme",
   },
   {
-    name: "IPhone Simulator",
-    bio: "XCode",
+    name: "Terminal",
+    bio: "Powershell",
   },
   {
     name: "Android Simulator",
     bio: "Android Studio",
   },
   {
-    name: "Clean Up",
-    bio: "Clean My Mac X",
+    name: "DNS",
+    bio: "Cloudflare",
   },
   {
-    name: "Video Editor",
-    bio: "Final Cut Pro",
-  },
-  {
-    name: "Recording Software",
-    bio: "Quicktime Player",
+    name: "Containerization",
+    bio: "Docker",
   },
   {
     name: "Terminal",
-    bio: "Mac Terminal",
-  },
-  {
-    name: "Design/Mock Up",
-    bio: "Adobe XD",
-  },
-  {
-    name: "Local DB",
-    bio: "Table Plus",
+    bio: "Fig",
   },
 ];
+
+export const software = [
+  {
+    name: "Vector graphics editor",
+    bio: "Adobe Illustrator",
+  },
+  {
+    name: "Image manipulation software",
+    bio: "Adobe Lightroom",
+  },
+  {
+    name: "Raster graphics editor",
+    bio: "Adobe Photoshop",
+  },
+  {
+    name: "Video editing software",
+    bio: "Adobe Premiere Pro",
+  },
+  {
+    name: "Post-production application",
+    bio: "Adobe After Effects",
+  },
+  {
+    name: "Design tool",
+    bio: "Figma",
+  },
+  {
+    name: "Digital music service",
+    bio: "Spotify",
+  },
+  {
+    name: "API platform",
+    bio: "Postman",
+  },
+  {
+    name: "Open Broadcaster Software",
+    bio: "OBS",
+  },
+]
 
 export default function Uses() {
   return (
@@ -73,9 +148,11 @@ export default function Uses() {
           Here is a list of all the gear I use on a day to day basis.
         </p>
       </div>
-      <hr className="border border-white opacity-30 my-6" />
+      <hr className="border border-white opacity-30 mt-6 mb-8" />
+
+          <h1 className="text-3xl font-semibold my-6">PC Hardware </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-        {items.map((item) => (
+        {software.map((item) => (
           <div
             key={item.name}
             className="p-3 border border-white/70 rounded-xl"
@@ -88,6 +165,43 @@ export default function Uses() {
           </div>
         ))}
       </div>
+
+          <hr className="border border-white opacity-30 my-8" />
+
+          <h1 className="text-3xl font-semibold my-6">Coding</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        {coding.map((item) => (
+          <div
+            key={item.name}
+            className="p-3 border border-white/70 rounded-xl"
+          >
+            <TerminalLogo className="w-[100px] mx-auto" />
+            <h1 className="my-5 text-xl font-semibold opacity-40">
+              {item.name}
+            </h1>
+            <p className="text-lg line-clamp-3">{item.bio}</p>
+          </div>
+        ))}
+      </div>
+
+           <hr className="border border-white opacity-30 my-8" />
+
+          <h1 className="text-3xl font-semibold my-6">Software</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        {software.map((item) => (
+          <div
+            key={item.name}
+            className="p-3 border border-white/70 rounded-xl"
+          >
+            <TerminalLogo className="w-[100px] mx-auto" />
+            <h1 className="my-5 text-xl font-semibold opacity-40">
+              {item.name}
+            </h1>
+            <p className="text-lg line-clamp-3">{item.bio}</p>
+          </div>
+        ))}
+      </div>
+          
     </>
   );
 }
