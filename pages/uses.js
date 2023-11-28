@@ -14,46 +14,37 @@ export const itemsPC = [
     name: "Keyboard",
     bio: "Logitech G512",
   },
-  },
   {
     name: "CPU",
     bio: "i5 10400F",
-  },
   },
   {
     name: "Motherboard",
     bio: "Gigabyte B460M",
   },
-  },
   {
     name: "Graphics card",
     bio: "GeForce GTX 1660 SUPER",
-  },
   },
   {
     name: "500gb SSD",
     bio: "WD Blue M.2 SN550",
   },
-  },
   {
     name: "Storage",
     bio: "WD 1TB 7200RPM",
-  },
   },
   {
     name: "Cooler",
     bio: "Cooler Master H410R",
   },
-  },
   {
     name: "Power Supply, 80+ Bronze",
     bio: "FSP 700W",
   },
-  },
   {
     name: "Ram",
     bio: "Corsair VENGEANCE® LPX 32GB",
-  },
   },
   {
     name: "PC Cabinet",
@@ -150,7 +141,7 @@ export default function Uses() {
       </div>
       <hr className="border border-white opacity-30 mt-6 mb-8" />
 
-          <h1 className="text-3xl font-semibold my-6">PC Hardware </h1>
+      <h1 className="text-3xl font-semibold my-6">PC Hardware </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         {software.map((item) => (
           <div
@@ -166,9 +157,9 @@ export default function Uses() {
         ))}
       </div>
 
-          <hr className="border border-white opacity-30 my-8" />
+      <hr className="border border-white opacity-30 my-8" />
 
-          <h1 className="text-3xl font-semibold my-6">Coding</h1>
+      <h1 className="text-3xl font-semibold my-6">Coding</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         {coding.map((item) => (
           <div
@@ -184,9 +175,9 @@ export default function Uses() {
         ))}
       </div>
 
-           <hr className="border border-white opacity-30 my-8" />
+      <hr className="border border-white opacity-30 my-8" />
 
-          <h1 className="text-3xl font-semibold my-6">Software</h1>
+      <h1 className="text-3xl font-semibold my-6">Software</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
         {software.map((item) => (
           <div
@@ -201,7 +192,7 @@ export default function Uses() {
           </div>
         ))}
       </div>
-          
+
     </>
   );
 }
