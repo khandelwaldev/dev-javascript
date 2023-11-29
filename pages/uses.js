@@ -143,7 +143,7 @@ export default function Uses() {
 
       <h1 className="text-3xl font-semibold my-6">PC Hardware </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-        {software.map((item) => (
+        {itemsPC.map((item) => (
           <div
             key={item.name}
             className="p-3 border border-white/70 rounded-xl"
