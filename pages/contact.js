@@ -1,5 +1,5 @@
 import {
-  CoffeeLogo,
+  TelegramIcon,
   DevToLogo,
   DiscordLogo,
   GithubLogo,
@@ -36,10 +36,10 @@ export const socialLinks = [
     icon: <DiscordLogo className="w-5 h-5" />,
   },
   {
-    label: "Buy me a Coffee",
-    domain: "buymeacoffee.com/",
-    username: "devkhandelwal",
-    icon: <CoffeeLogo className="w-5 h-5" />,
+    label: "Telegram",
+    domain: "t.me/",
+    username: "slyro",
+    icon: <TelegramIcon className="w-5 h-5" />,
   },
   {
     label: "Dev.to",
