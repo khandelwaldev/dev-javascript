@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import useSWR from "swr";
-import AnimatedLink from "./design/AnimatedLink";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
@@ -25,21 +24,46 @@ const NowPlaying = () => {
 
   return (
     <div>
-      <p className="flex gap-3 w-fit text-lg items-center">
         {data.isPlaying ? (
-          <AnimatedLink href={data.songUrl} target="_blank" rel="noopener noreferrer">
-            <div className="flex w-fit items-center gap-3">
-              <img src={data.albumImageUrl} width={30} height={30} className="rounded-full" alt={data.title} />
-              <span className="!text-white">{data.title}</span>
-            </div>
-          </AnimatedLink>
+          <a
+            href={data.songUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-[#121212] w-full h-[60px] border-[2px] border-[#1ed760] rounded-xl px-2 flex gap-5 items-center">
+                <div>
+                  <img
+                    src={data.albumImageUrl}
+                    width={45}
+                    height={45}
+                    className="rounded-full"
+                  />
+                </div>
+                <div>
+                  <p className="line-clamp-1">{data.title}</p>
+                  <p className="text-white opacity-[50%] text-base line-clamp-1">{data.artist}</p>
+                </div>
+              </div>
+          </a>
         ) : (
-          <div className="flex w-fit items-center gap-3">
-            <img src="/spotify.png" width={30} height={30} className="rounded-full" alt="Not Listening - Spotify" />
-            <span className="!text-white">Not Listening - Spotify</span>
-          </div>
+          <div className="bg-[#121212] w-[300px] h-[60px] border-[2px] border-[#1ed760] rounded-xl px-2">
+              <div className="w-full h-full flex gap-5 items-center">
+                <div>
+                  <img
+                    src={`./spotify.png`}
+                    width={45}
+                    height={45}
+                    className="rounded-full"
+                    alt="Spotify"
+                  />
+                </div>
+                <div>
+                  <p className="line-clamp-1">Not Listening</p>
+                  <p className="text-white opacity-[50%] text-base line-clamp-1">Spotify-</p>
+                </div>
+              </div>
+            </div>
         )}
-      </p>
     </div>
   );
 };
